@@ -90,3 +90,24 @@ function playGame() {
 }
 
 playGame();
+
+/* 
+GAME BREAK DOWN 
+
+1. Invoked at line 92 playGame(); 
+2. Takes us to playGame() function 
+3. line 83 start with prompting our user to enter a choice. 
+4. Moves to next line of code. userChoice which is set/has value of getUserChoice(promptUserChoice);  which takes us to our getUserChoice function where we are passing in the promptUserChoice (whatever the user types in)
+5. this takes us to our getUserChoice() function 
+6. now its going to take usersInput and make sure it is all lowercase  and then next line --meets the requirements that it is one of the options. if not an option it will throw error
+7. next line is return userInput which takes us out of this function and back to playGame() function to begin the next line or set of directions which is getComputerChoice() 
+8. this will not take us to getComputerChoice() function 
+9. now setting variable randomNumber  and it will then walk through the if statement 
+10. until it is returned true which will pop us off of the call stack (like a to do list) and take us back to playGame() function to finish those directions 
+11. log user choice 
+12. log comp choice 
+13. log to console determinWinner()  so it takes us to determineWinner() function 
+14. runs through if statement until returned true which will pop us off of the call stack and back to playGame() function to finish it 
+15.  logs value to console. 
+16. done. 
+*/
